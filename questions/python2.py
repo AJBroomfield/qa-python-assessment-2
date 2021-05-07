@@ -35,7 +35,7 @@ def one(string):
     for char in string:
         solution += char*3
     return solution
-print(one('The'))
+
 
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -57,7 +57,13 @@ print(one('The'))
 
 
 def two(number):
-    return False
+    solution = True
+    for i in range(2,number-1):
+        if number % i == 0:
+            solution = False
+    return solution
+        
+print(two(8))
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
