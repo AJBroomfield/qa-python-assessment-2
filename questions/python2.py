@@ -133,10 +133,18 @@ def four(string1, string2):
     # <HINT>
     # There is a module which can be used to generate random numbers, this module is called random.
     # The random module contains a function called randint.
-
+import random
 
 def five():
-    return []
+    solution = []
+    while len(solution) !=5:
+        a = random.randint(100,200)
+        if a % 2 == 0:
+            solution.append(a)
+    return solution
+print(five())
+print(five())
+    
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
