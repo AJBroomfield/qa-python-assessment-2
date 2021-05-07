@@ -194,8 +194,15 @@ def six(string):
 
 
 def seven(a, b, c):
-    return False
+    list = [a,b,c]
+    list.sort()
+    if (list[1]-list[0]) == (list[2]-list[1]):
+        return True
+    else:
+        return False
 
+    
+print(seven(4,60,9))
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
     # <QUESTION 8>
