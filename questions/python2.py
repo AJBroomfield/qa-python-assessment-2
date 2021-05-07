@@ -244,7 +244,27 @@ def eight(string,  a):
 
 
 def nine(string1, string2):
-    return False
+    
+    if len(string1) > len(string2):
+        string1, string2 = string2, string1
+
+    listshort = list(string1)
+    listlong = list(string2)
+    len_short = len(listshort)
+    len_long= len(listlong)
+
+    for char in listshort:
+        if char in listlong:
+            listlong.remove(char)
+    if len(listlong) == (len_long-len_short):
+        return True
+    else:
+        return False
+                
+    
+            
+print(nine("cat", "dog"))
+print()
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
